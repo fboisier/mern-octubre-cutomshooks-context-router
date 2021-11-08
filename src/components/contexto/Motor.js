@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AutoContext } from '../../context/AutoContext'
 
-export const Motor = ({serial}) => {
+export const Motor = () => {
 
-
+    const {serial} = useContext(AutoContext)
 
     return (
         <div>
